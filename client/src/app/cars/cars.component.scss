@@ -1,0 +1,38 @@
+.cars-container {
+    max-width: 800px;
+    margin: auto;  
+    padding: 20px;
+
+    .car-list {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      .car-item {
+        padding: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #f9f9f9;
+
+        .car-details {
+          flex-grow: 1;
+        }
+        
+        .book-button {
+          background: #007bff;
+          color: white;
+          border: none;
+          padding: 10px 15px;
+          cursor: pointer;
+          border-radius: 5px;
+          &:hover {
+            background: #0056b3;
+          }
+        }
+      }
+    }
+  }
+  
