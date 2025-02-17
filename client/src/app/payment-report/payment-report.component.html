@@ -26,7 +26,7 @@
             <tbody>
               <tr *ngFor="let val of bookingList">
                 <td>{{ val.id }}</td>
-                <td>${{ val.amount }}</td>
+                <td>₹{{ val.amount }}</td>
                 <td>{{ val.paymentDate | date:'dd-MMM-yyyy HH:mm:ss' }}</td>
                 <td>{{ val.paymentMethod }}</td>
                 <td>

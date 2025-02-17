@@ -28,7 +28,7 @@
                   {{ booking.status }}
                 </span>
               </td>
-              <td class="amount">${{ booking.totalAmount }}</td>
+              <td class="amount">₹{{ booking.totalAmount }}</td>
               <td>
                 <span class="payment-badge" [ngClass]="booking.paymentStatus.toLowerCase()">
                   {{ booking.paymentStatus }}

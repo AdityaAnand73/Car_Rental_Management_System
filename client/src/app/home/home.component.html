@@ -102,70 +102,6 @@
       </p>
       
       <div class="team-grid">
-        <!-- <div class="team-card">
-          <div class="member-image">
-            <i class="fas fa-user-circle"></i>
-          </div>
-          <h3>Aditya Anand</h3>
-          <p class="role">Team Lead</p>
-          <p class="description">Visionary leader driving innovation in car rental solutions</p>
-          <div class="social-links">
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-github"></i></a>
-          </div>
-        </div>
-        
-        <div class="team-card">
-          <div class="member-image">
-            <i class="fas fa-user-circle"></i>
-          </div>
-          <h3>Divyansh Dubey</h3>
-          <p class="role">Technical Architect</p>
-          <p class="description">Backend specialist crafting robust solutions</p>
-          <div class="social-links">
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-github"></i></a>
-          </div>
-        </div>
-        
-        <div class="team-card">
-          <div class="member-image">
-            <i class="fas fa-user-circle"></i>
-          </div>
-          <h3>Aastha Gajbe</h3>
-          <p class="role">UX Designer</p>
-          <p class="description">Creating seamless user experiences</p>
-          <div class="social-links">
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-github"></i></a>
-          </div>
-        </div>
-        
-        <div class="team-card">
-          <div class="member-image">
-            <i class="fas fa-user-circle"></i>
-          </div>
-          <h3>Nishant Uparkar</h3>
-          <p class="role">System Architect</p>
-          <p class="description">Engineering scalable solutions</p>
-          <div class="social-links">
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-github"></i></a>
-          </div>
-        </div>
-        
-        <div class="team-card">
-          <div class="member-image">
-            <i class="fas fa-user-circle"></i>
-          </div>
-          <h3>Ishan Katoch</h3>
-          <p class="role">Frontend Developer</p>
-          <p class="description">Crafting intuitive user interfaces</p>
-          <div class="social-links">
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-github"></i></a>
-          </div>
-        </div> -->
 
         <!-- Team Cards Updates -->
         <div class="team-card">
@@ -261,9 +197,9 @@
         </div>
         <div class="contact-form">
           <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-            <input type="text" placeholder="Your Name" formControlName="name">
-            <input type="email" placeholder="Your Email" formControlName="email">
-            <textarea placeholder="Your Message" formControlName="message"></textarea>
+            <input type="text" placeholder="Your Name*" formControlName="name">
+            <input type="email" placeholder="Your Email*" formControlName="email">
+            <textarea placeholder="Your Message*" formControlName="message"></textarea>
             <div class="success-message" *ngIf="successMessage">{{ successMessage }}</div>
             <button type="submit" class="submit-btn" [disabled]="contactForm.invalid || submitted">
               <i class="fas fa-paper-plane"></i> Send Message

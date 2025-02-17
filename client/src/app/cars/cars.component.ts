@@ -107,6 +107,7 @@ export class CarsComponent implements OnInit {
     let availableCars = this.cars.filter(car => car.status.toLowerCase() === "available");
     let userCars = [
       ...this.userBookings.filter(b => b.status === "Booked").map(b => b.car),
+      ...this.userBookings.filter(b => b.status === "Process Payment").map(b => b.car),
       ...this.userBookings.filter(b => b.status === "Pending").map(b => b.car)
     ];
     
